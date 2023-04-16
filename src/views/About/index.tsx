@@ -39,7 +39,7 @@ const About = () => {
         </Grid>
         <Grid item xs={12} md={6} sx={{mt: '2%'}}>
           <Typography variant="body1" sx={{ mb: 2 }}>
-            👋 Hi there! I'm a fullstack developer with almost 5 years of
+            👋 Hi there! I&rsquo;m a fullstack developer with almost 5 years of
             experience. 🎓 Graduated from College of Engineering Munnar with a
             B.Tech in Computer Science and Engineering, and started my journey
             as an operation analyst at JustDoc, which was later acquired by
@@ -62,7 +62,7 @@ const About = () => {
             like React.js and Angular, database management using PostgreSQL and
             MongoDB, and cloud services like AWS and GCP. I love coding,
             exploring new technologies, and writing about them on Medium and
-            Blogger. 📝 When I'm not coding, you can find me hanging out with
+            Blogger. 📝 When I&rsquo;m not coding, you can find me hanging out with
             friends, enjoying good food, and binge-watching Netflix to cheer
             myself up. 🍔🍕🍟🍿
           </Typography>

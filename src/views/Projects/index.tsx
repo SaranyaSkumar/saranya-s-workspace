@@ -48,7 +48,7 @@ const gridItems = [
         As a learning project, I built a basic landing page using Angular 8
         along time ago. The login page features Google SSO integration for
         secure access, and the landing page provides an overview of the
-        website's purpose and features. The blog page is a skeleton template for
+        website&rsquo;s purpose and features. The blog page is a skeleton template for
         future content. The design is intentionally simple, using basic CSS and
         a minimalist layout with no fancy animations.
       </p>

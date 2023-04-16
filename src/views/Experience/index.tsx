@@ -63,7 +63,7 @@ const gridItems = [
     title: <h2>DoctorOnCall</h2>,
     description: (
       <p>
-        Improved the system's efficiency and execution time by integrating a
+        Improved the system&rsquo;s efficiency and execution time by integrating a
         logical module that handles user customizations and implementing
         Sequelize in NodeJS. Also, successfully reduced security bugs in legacy
         code by 60% through revamping.
