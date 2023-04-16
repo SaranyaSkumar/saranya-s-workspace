@@ -9,11 +9,8 @@ import {
   Card,
   CardMedia,
   CardContent,
+  useMediaQuery,
 } from "@mui/material";
-import Lottie from "lottie-react";
-import frontend from "@/assets/images/frontend.json";
-import backend from "@/assets/images/backend.json";
-import database from "@/assets/images/database.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,9 +46,9 @@ const gridItems = [
         As a learning project, I built a basic landing page using Angular 8
         along time ago. The login page features Google SSO integration for
         secure access, and the landing page provides an overview of the
-        website&rsquo;s purpose and features. The blog page is a skeleton template for
-        future content. The design is intentionally simple, using basic CSS and
-        a minimalist layout with no fancy animations.
+        website&rsquo;s purpose and features. The blog page is a skeleton
+        template for future content. The design is intentionally simple, using
+        basic CSS and a minimalist layout with no fancy animations.
       </p>
     ),
     image: (
@@ -72,9 +69,13 @@ const handleBoxClick = (link: any) => {
   window.open(link, "_blank");
 };
 const Projects = () => {
+  const isMobile = useMediaQuery("(max-width: 960px)");
+
   return (
     <Box sx={{ fontFamily: "sans-serif" }}>
-      <Box sx={{ textAlign: "center", m: "10% 0 5% 0" }}>
+      <Box
+        sx={{ textAlign: "center", m: isMobile ? "22% 0 5% 0" : "3% 0 5% 0" }}
+      >
         <Typography variant="body2">PROJECTS</Typography>
         <Typography variant="h4" sx={{ fontWeight: 600 }}>
           Featured Works

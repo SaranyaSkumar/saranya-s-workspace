@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import {
-  Grid,
-  Box,
-  Typography,
-} from "@mui/material";
+import { Grid, Box, Typography, useMediaQuery } from "@mui/material";
 
 const About = () => {
+  const isMobile = useMediaQuery("(max-width: 960px)");
+
   return (
     <Box sx={{ fontFamily: "sans-serif" }}>
-      <Box sx={{ textAlign: "center", m: "10% 0 5% 0" }}>
+      <Box
+        sx={{ textAlign: "center", m: isMobile ? "22% 0 5% 0" : "3% 0 5% 0" }}
+      >
         <Typography variant="body2" sx={{ textTransform: "uppercase" }}>
           About Me
         </Typography>
@@ -19,7 +19,7 @@ const About = () => {
         </Typography>
       </Box>
       <Grid container spacing={2} className="container-size">
-        <Grid item xs={12} md={6} sx={{textAlign:'center'}}>
+        <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
           <Image
             src="/Image.jpeg"
             alt="Image"
@@ -29,7 +29,7 @@ const About = () => {
             priority
           />
         </Grid>
-        <Grid item xs={12} md={6} sx={{mt: '2%'}}>
+        <Grid item xs={12} md={6} sx={{ mt: "2%" }}>
           <Typography variant="body1" sx={{ mb: 2 }}>
             👋 Hi there! I&rsquo;m a fullstack developer with almost 5 years of
             experience. 🎓 Graduated from College of Engineering Munnar with a
@@ -54,9 +54,9 @@ const About = () => {
             like React.js and Angular, database management using PostgreSQL and
             MongoDB, and cloud services like AWS and GCP. I love coding,
             exploring new technologies, and writing about them on Medium and
-            Blogger. 📝 When I&rsquo;m not coding, you can find me hanging out with
-            friends, enjoying good food, and binge-watching Netflix to cheer
-            myself up. 🍔🍕🍟🍿
+            Blogger. 📝 When I&rsquo;m not coding, you can find me hanging out
+            with friends, enjoying good food, and binge-watching Netflix to
+            cheer myself up. 🍔🍕🍟🍿
           </Typography>
         </Grid>
       </Grid>
