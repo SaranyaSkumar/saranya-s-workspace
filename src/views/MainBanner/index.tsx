@@ -53,12 +53,13 @@ const MainBanner = () => {
             </Typography>
           </Box>
 
-          <h1>
+          
             <Grid container spacing={6} sx={{ mt: '4px' }}>
               <Grid item>
                 <a href="https://github.com/SaranyaSkumar" target="_blank">
                   <FontAwesomeIcon
                     className="social-icon main"
+                    size="2x"
                     icon={faGithub}
                   />
                 </a>
@@ -70,6 +71,7 @@ const MainBanner = () => {
                 >
                   <FontAwesomeIcon
                     className="social-icon main"
+                    size="2x"
                     icon={faLinkedin}
                   />
                 </a>
@@ -78,6 +80,7 @@ const MainBanner = () => {
                 <a href="https://twitter.com/SaranyaSKumar06" target="_blank">
                   <FontAwesomeIcon
                     className="social-icon main"
+                    size="2x"
                     icon={faTwitter}
                   />
                 </a>
@@ -86,12 +89,13 @@ const MainBanner = () => {
                 <a href="https://medium.com/@saranyasasikumar06" target="_blank">
                   <FontAwesomeIcon
                     className="social-icon main"
+                    size="2x"
                     icon={faMedium}
                   />
                 </a>
               </Grid>
             </Grid>
-          </h1>
+          
         </Box>
       </Grid>
       <Grid item xs={12} sm={6} className='container-size'>
