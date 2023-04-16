@@ -55,7 +55,7 @@ const Skills = () => {
       <Box sx={{ textAlign: "center", m: "10% 0 5% 0" }}>
         <Typography variant="body2">WHAT I DO</Typography>
         <Typography variant="h4" sx={{ fontWeight: 600 }}>
-          Skills and Experience
+          Expertise & Abilities
         </Typography>
       </Box>
       <Grid container spacing={2} className="container-size">

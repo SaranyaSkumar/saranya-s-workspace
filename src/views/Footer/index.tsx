@@ -4,7 +4,7 @@ import { Grid, Box, Button } from "@mui/material";
 
 const Footer = () => {
   return (
-    <Grid className="container-size">
+    <Grid className="footer">
       <Box className={styles.new_footer_top}>
         <Grid container spacing={2} sx={{ ml: "2%", fontFamily: "sans-serif", display:'flex', justifyContent:'flex-end' }}>
           <Grid item xs={12} md={4}>
