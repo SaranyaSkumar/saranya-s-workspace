@@ -36,6 +36,7 @@ const gridItems = [
         alt="Vercel Logo"
         width={500}
         height={250}
+        className={styles.projects_image}
         priority
       />
     ),
@@ -59,10 +60,11 @@ const gridItems = [
         alt="Vercel Logo"
         width={500}
         height={250}
+        className={styles.projects_image}
         priority
       />
     ),
-    link: "https://saranyasasikumar.web.app/home",
+    link: "https://saranyasasikumar.web.app",
   },
 ];
 
@@ -72,7 +74,7 @@ const handleBoxClick = (link: any) => {
 const Projects = () => {
   return (
     <Box sx={{ fontFamily: "sans-serif" }}>
-      <Box sx={{ textAlign: "center", m: "5% 0 5% 0" }}>
+      <Box sx={{ textAlign: "center", m: "10% 0 5% 0" }}>
         <Typography variant="body2">PROJECTS</Typography>
         <Typography variant="h4" sx={{ fontWeight: 600 }}>
           Featured Works

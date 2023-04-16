@@ -50,7 +50,7 @@ const Header = () => {
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           {navLinks.map((item) => (
             <Button key={item.title} sx={{ color: "black", m: "0px 3%" }}>
-              <Link href={item.path} key={item.title}>
+              <Link href={item.path} key={item.title} passHref={true} legacyBehavior={true}>
                 {item.icon}
               </Link>
             </Button>
@@ -86,9 +86,9 @@ const Header = () => {
         </>
       )}
 
-      <Drawer anchor="right" open={toggle} onClose={() => reset("navbar")}>
+      {/* <Drawer anchor="right" open={toggle} onClose={() => reset("navbar")}>
         {navLinksList}
-      </Drawer>
+      </Drawer> */}
     </div>
   );
 };

@@ -1,24 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import {
   Grid,
   Box,
   Typography,
-  Card,
-  CardMedia,
-  CardContent,
 } from "@mui/material";
-import Lottie from "lottie-react";
-import frontend from "@/assets/images/frontend.json";
-import backend from "@/assets/images/backend.json";
-import database from "@/assets/images/database.json";
 
 const About = () => {
   return (
     <Box sx={{ fontFamily: "sans-serif" }}>
-      <Box sx={{ textAlign: "center", m: "5% 0 5% 0" }}>
+      <Box sx={{ textAlign: "center", m: "10% 0 5% 0" }}>
         <Typography variant="body2" sx={{ textTransform: "uppercase" }}>
           About Me
         </Typography>
@@ -26,11 +18,11 @@ const About = () => {
           Get to know me better!
         </Typography>
       </Box>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} className="container-size">
         <Grid item xs={12} md={6} sx={{textAlign:'center'}}>
           <Image
             src="/Image.jpeg"
-            alt="Vercel Logo"
+            alt="Image"
             className={styles.pic}
             width={500}
             height={500}
